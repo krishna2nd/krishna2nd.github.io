@@ -1,0 +1,42 @@
+{
+  "short_name": "Krishna2nd",
+  "name": "Krishna 2nd gen app",
+  "icons": [
+    {
+      "src": "a/i/a-1x.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "a/i/a-2x.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "a/i/a-4x.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "a/i/a-8x.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "a/i/a-16x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "gcm_sender_id": "656085505957",
+  "gcm_user_visible_only": true,
+  "start_url": "/?start_url=homescreenicon",
+  "permissions": [
+      "gcm"
+  ],
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#2874f0",
+  "background_color": "#2874f0"
+}
