@@ -3,27 +3,27 @@
   "name": "Krishna2nd Profile",
   "icons": [
     {
-      "src": "1/img/favicon.ico",
+      "src": "img/favicon.ico",
       "type": "image/x-icon",
       "sizes": "32x32"
     },
     {
-      "src": "1/img/favicon.ico",
+      "src": "img/favicon.ico",
       "type": "image/x-icon",
       "sizes": "64x64"
     },
     {
-      "src": "1/img/favicon.ico",
+      "src": "img/favicon.ico",
       "type": "image/x-icon",
       "sizes": "128x128"
     },
     {
-      "src": "1/img/favicon.ico",
+      "src": "img/favicon.ico",
       "type": "image/x-icon",
       "sizes": "256x256"
     },
     {
-      "src": "1/img/favicon.ico",
+      "src": "img/favicon.ico",
       "type": "image/x-icon",
       "sizes": "512x512"
     }
