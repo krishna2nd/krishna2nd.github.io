@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 /*Body
 ---------------------------------------------------------*/
 body {
-	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-family: 'krishna2nd', Arial, Helvetica, sans-serif;
 	background-color: #ffffff;
 	font-weight: normal;
 	color: #000000;
@@ -426,6 +426,7 @@ x:-o-prefocus, .navi-link {
 ---------------------------------------------------------*/
 .experience-block {
 	margin: 60px 0 !important;
+	font-family: 'krishna2nd', tahoma, Arial, Helvetica, sans-serif;
 }
 .experience-block .col-1 {
 	width: 14%;
