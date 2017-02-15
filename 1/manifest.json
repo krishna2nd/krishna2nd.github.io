@@ -31,7 +31,6 @@
   "start_url": "index.html?launcher=true",
   "gcm_sender_id": "656085505957",
   "gcm_user_visible_only": true,
-  "start_url": "/?start_url=homescreenicon",
   "permissions": [
       "gcm"
   ],
