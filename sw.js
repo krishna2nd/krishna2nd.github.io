@@ -1,15 +1,11 @@
+/* global importScripts, workbox */
+
 importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js'
 );
 
-/* global importScripts, workbox */
-
-importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js'
-);
-
-var VERSION = '0.0.1';
-var SPA_NAV_PATTERN = '/';
+var VERSION = '0.0.2';
+var SPA_NAV_PATTERN = '/index.html';
 var SPA_NAV_OPTIONS = {
   blacklist: [
     new RegExp(
@@ -39,26 +35,45 @@ function initialize() {
   workbox.googleAnalytics.initialize();
   workbox.core.skipWaiting();
   workbox.core.clientsClaim();
+  workbox.precaching.precacheAndRoute(
+    [
+      '/about.css',
+      { url: '/index.html', revision: VERSION },
+      { url: '/', revision: VERSION }
+    ],
+    {
+      directoryIndex: null,
+      cleanUrls: true
+    }
+  );
 }
 
 function registerRoutes() {
-  workbox.routing.registerNavigationRoute(SPA_NAV_PATTERN, SPA_NAV_OPTIONS);
+  workbox.routing.registerNavigationRoute(
+    workbox.precaching.getCacheKeyForURL(SPA_NAV_PATTERN),
+    SPA_NAV_OPTIONS
+  );
   workbox.routing.registerRoute(
-    /\.(?:js|css|json|html)$/,
+    /^\/$/,
     new workbox.strategies.StaleWhileRevalidate({
       cacheName: 'static-cache',
       plugins: PLUGINS
     })
   );
-
   workbox.routing.registerRoute(
-    /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
-    new workbox.strategies.CacheFirst({
-      cacheName: 'image-cache',
+    /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$/,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: 'images-cache',
       plugins: PLUGINS
     })
   );
-
+  workbox.routing.registerRoute(
+    /\.(?:js|css)$/,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: 'code-cache',
+      plugins: PLUGINS
+    })
+  );
   workbox.routing.registerRoute(
     /^https:\/\/fonts\.googleapis\.com/,
     new workbox.strategies.StaleWhileRevalidate({
