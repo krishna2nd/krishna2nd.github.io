@@ -78,9 +78,287 @@
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
     <title>Krishna Kumar</title>
     <style type="text/css">
-    @media only screen and (max-width:700px){div.lg{display:none;height:0;opacity:0;visibility:hidden}}@media only screen and (min-width:701px) and (max-width:800px){.lg{padding-top:60px;padding-bottom:120px}.lg .photo{padding:10px!important}.lg .social{height:70px}.lg .social i.fab{font-size:36px}div.md{display:none;height:0;opacity:0;visibility:hidden}}@media only screen and (min-width:701px){div.md{display:none;height:0;opacity:0;visibility:hidden}}body,html{width:100%;height:100%;margin:0;padding:0;font-family:'Source Sans Pro',sans-serif;-webkit-font-smoothing:antialiased;font-size:1em;color:#565656}a{text-decoration:none;color:gray;cursor:pointer}a:hover{text-decoration:underline}.social a{color:#fff}.social a:hover{color:#fff;text-decoration:none;-webkit-animation:glow 1s ease-in-out infinite alternate;-moz-animation:glow 1s ease-in-out infinite alternate;animation:glow 1s ease-in-out infinite alternate}@-webkit-keyframes glow{from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #0f0,0 0 40px #0f0,0 0 50px #fcf2f7,0 0 60px #0f0,0 0 70px #0f0}to{text-shadow:0 0 20px #fff,0 0 30px #adff2f,0 0 40px #adff2f,0 0 50px #adff2f,0 0 60px #adff2f,0 0 70px #adff2f,0 0 80px #adff2f}}.h2{font-size:1.2em;color:#ababab;margin-bottom:2px}hr{height:1px;border:none;background-color:#ababab}.d-row{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;padding:8px}.hello{display:inline-block;border-radius:2px}.label{font-weight:400;text-align:left}.value{font-weight:300;text-align:left}.status{padding:2px 8px}.label::first-letter{font-size:130%}.flex-center{display:flex;flex-direction:row;justify-content:center;align-items:center}.flex-hc{justify-content:center}.flex-c,.flex-hc{display:flex;flex-direction:column}.about{border-collapse:collapse;text-align:left}.social{height:60px;bottom:0;position:sticky}.social .content{display:inline-block;justify-content:space-evenly}.social .content i{padding:0 10px}.social i.fab{font-size:20px}.green-label{background-color:#07cb79;color:#fff}.round-corner{border-radius:4px}.card,.section{padding:20px 0}.card,.card-light,.section{margin-bottom:15px}.card,.card-light,.card-nbpm,.section{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}.section .label{padding-left:8px}.section .value{padding-left:20px}.walmart::before{display:inline-block;content:' ';background-image:url(/assets/walmart-labs.jpg);background-size:20px 20px;height:20px;width:20px}.lg .label{width:100px}.lg .value{font-weight:300;font-size:1em}.lg .hello{display:inline-block;border-radius:2px}.lg .about-me{height:100vh;width:100%}.lg .photo{padding:50px;height:100%;border-right:none;border-collapse:collapse}.lg .photo .pic{height:300px;width:300px;box-shadow:0 0 8px 8px #fff inset;border-radius:4px;background-image:url(/assets/profile.jpeg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.lg .about{width:500px;height:100%}.lg .h1{font-size:1.6em}.lg .h1.light{font-weight:600}.md .label{width:35%;font-size:1.1em}.md .value{font-size:1.1em}.md .about{height:100%}.md .about-me{width:100%}.social{height:60px;width:100%;bottom:0;left:0;z-index:1000;position:fixed;margin-bottom:0}.md .photo{height:400px;width:100%;border-right:none;border-collapse:collapse}.md .photo .pic{height:400px;width:100%;background-image:url(/assets/profile.jpeg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.md .heading{text-align:center}.md .details{width:100%}.md .walmart::before{background-size:18px 18px;height:18px;width:18px}.md .last-card{padding-bottom:80px}.md .social{height:80px}.md .social i.fab{font-size:40px}
+      @media only screen and (max-width: 700px) {
+        div.lg {
+          display: none;
+          height: 0;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      @media only screen and (min-width: 701px) and (max-width: 800px) {
+        .lg {
+          padding-top: 60px;
+          padding-bottom: 120px;
+        }
+        .lg .photo {
+          padding: 10px !important;
+        }
+        .lg .social {
+          height: 70px;
+        }
+        .lg .social i.fab {
+          font-size: 36px;
+        }
+        div.md {
+          display: none;
+          height: 0;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      @media only screen and (min-width: 701px) {
+        div.md {
+          display: none;
+          height: 0;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        color: #565656;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .social a {
+        color: #fff;
+      }
+      .social a:hover {
+        color: #fff;
+        text-decoration: none;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f0,
+            0 0 40px #0f0, 0 0 50px #fcf2f7, 0 0 60px #0f0, 0 0 70px #0f0;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #adff2f, 0 0 40px #adff2f,
+            0 0 50px #adff2f, 0 0 60px #adff2f, 0 0 70px #adff2f,
+            0 0 80px #adff2f;
+        }
+      }
+      .h2 {
+        font-size: 1.2em;
+        color: #ababab;
+        margin-bottom: 2px;
+      }
+      hr {
+        height: 1px;
+        border: none;
+        background-color: #ababab;
+      }
+      .d-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 8px;
+      }
+      .hello {
+        display: inline-block;
+        border-radius: 2px;
+      }
+      .label {
+        font-weight: 400;
+        text-align: left;
+      }
+      .value {
+        font-weight: 300;
+        text-align: left;
+      }
+      .status {
+        padding: 2px 8px;
+      }
+      .label::first-letter {
+        font-size: 130%;
+      }
+      .flex-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-hc {
+        justify-content: center;
+      }
+      .flex-c,
+      .flex-hc {
+        display: flex;
+        flex-direction: column;
+      }
+      .about {
+        border-collapse: collapse;
+        text-align: left;
+      }
+      .social {
+        height: 60px;
+        bottom: 0;
+        position: sticky;
+      }
+      .social .content {
+        display: inline-block;
+        justify-content: space-evenly;
+      }
+      .social .content i {
+        padding: 0 10px;
+      }
+      .social i.fab {
+        font-size: 20px;
+      }
+      .green-label {
+        background-color: #07cb79;
+        color: #fff;
+      }
+      .round-corner {
+        border-radius: 4px;
+      }
+      .card,
+      .section {
+        padding: 20px 0;
+      }
+      .card,
+      .card-light,
+      .section {
+        margin-bottom: 15px;
+      }
+      .card,
+      .card-light,
+      .card-nbpm,
+      .section {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      .section .label {
+        padding-left: 8px;
+      }
+      .section .value {
+        padding-left: 20px;
+      }
+      .walmart::before {
+        display: inline-block;
+        content: ' ';
+        background-image: url(/assets/walmart-labs.jpg);
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+      }
+      .lg .label {
+        width: 100px;
+      }
+      .lg .value {
+        font-weight: 300;
+        font-size: 1em;
+      }
+      .lg .hello {
+        display: inline-block;
+        border-radius: 2px;
+      }
+      .lg .about-me {
+        height: 100vh;
+        width: 100%;
+      }
+      .lg .photo {
+        padding: 50px;
+        height: 100%;
+        border-right: none;
+        border-collapse: collapse;
+      }
+      .lg .photo .pic {
+        height: 300px;
+        width: 300px;
+        box-shadow: 0 0 8px 8px #fff inset;
+        border-radius: 4px;
+        background-image: url(/assets/profile.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .lg .about {
+        width: 500px;
+        height: 100%;
+      }
+      .lg .h1 {
+        font-size: 1.6em;
+      }
+      .lg .h1.light {
+        font-weight: 600;
+      }
+      .md .label {
+        width: 35%;
+        font-size: 1.1em;
+      }
+      .md .value {
+        font-size: 1.1em;
+      }
+      .md .about {
+        height: 100%;
+      }
+      .md .about-me {
+        width: 100%;
+      }
+      .social {
+        height: 60px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        position: fixed;
+        margin-bottom: 0;
+      }
+      .md .photo {
+        height: 400px;
+        width: 100%;
+        border-right: none;
+        border-collapse: collapse;
+      }
+      .md .photo .pic {
+        height: 400px;
+        width: 100%;
+        background-image: url(/assets/profile.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .md .heading {
+        text-align: center;
+      }
+      .md .details {
+        width: 100%;
+      }
+      .md .walmart::before {
+        background-size: 18px 18px;
+        height: 18px;
+        width: 18px;
+      }
+      .md .last-card {
+        padding-bottom: 80px;
+      }
+      .md .social {
+        height: 80px;
+      }
+      .md .social i.fab {
+        font-size: 40px;
+      }
     </style>
-
   </head>
   <body>
     <div class="lg">
@@ -276,6 +554,20 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138601741-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138601741-1');
+    </script>
+
     <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
