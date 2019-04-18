@@ -1,37 +1,467 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Krishna Kumar</title>
-	<script type="text/javascript">
-		window.location.href = '1/index.html';
-	</script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About me</title>
+    <style type="text/css">
+      @media only screen and (max-width: 500px) {
+        div.lg {
+          display: none;
+          height: 0px;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      @media only screen and (min-width: 501px) {
+        div.md {
+          display: none;
+          height: 0px;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    </style>
+    <style type="text/css">
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        color: #565656;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .social a {
+        color: white;
+      }
+      .social a:hover {
+        color: white;
+        text-decoration: none;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px lime,
+            0 0 40px lime, 0 0 50px #fcf2f7, 0 0 60px lime, 0 0 70px lime;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px greenyellow, 0 0 40px greenyellow,
+            0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow,
+            0 0 80px greenyellow;
+        }
+      }
+      .h2 {
+        font-size: 1.2em;
+        color: #ababab;
+        margin-bottom: 2px;
+      }
+      hr {
+        height: 1px;
+        border: none;
+        background-color: #ababab;
+      }
+      .d-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 8px;
+      }
+      .hello {
+        display: inline-block;
+        border-radius: 2px;
+      }
+      .label {
+        font-weight: 400;
+        text-align: left;
+      }
+      .value {
+        font-weight: 300;
+        text-align: left;
+      }
+      .status {
+        padding: 2px 8px;
+      }
+      .label::first-letter {
+        font-size: 130%;
+      }
 
-	   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      .flex-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-hc {
+        justify-content: center;
+      }
+      .flex-c,
+      .flex-hc {
+        display: flex;
+        flex-direction: column;
+      }
 
-  ga('create', 'UA-91424270-1', 'auto');
-  ga('send', 'pageview');
+      .about {
+        border-collapse: collapse;
+        text-align: left;
+      }
 
-</script>
+      .social {
+        height: 60px;
+        bottom: 0;
+        position: sticky;
+      }
+      .social .content {
+        display: inline-block;
+        justify-content: space-evenly;
+      }
+      .social .content i {
+        padding: 0 10px;
+      }
+      .green-label {
+        background-color: #07cb79;
+        color: #fff;
+      }
+      .round-corner {
+        border-radius: 4px;
+      }
+      .card,
+      .section {
+        padding: 20px 0px;
+      }
+      .card-light,
+      .card,
+      .section {
+        margin-bottom: 15px;
+      }
+      .card-nbpm,
+      .card-light,
+      .card,
+      .section {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
 
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1081324951927483'); // Insert your pixel ID here.
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1081324951927483&ev=PageView&noscript=1"
-/></noscript>
-</head>
-<body>
+      .section .label {
+        padding-left: 8px;
+      }
+      .section .value {
+        padding-left: 20px;
+      }
 
-</body>
+      .walmart::before {
+        display: inline-block;
+        content: ' ';
+        background-image: url('/assets/walmart-labs.jpg');
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+    <style type="text/css">
+      .lg .label {
+        width: 100px;
+      }
+      .lg .value {
+        font-weight: 300;
+        font-size: 1em;
+      }
+
+      .lg .hello {
+        display: inline-block;
+        border-radius: 2px;
+      }
+
+      .lg .about-me {
+        height: 100vh;
+        width: 100%;
+      }
+      .lg .photo {
+        padding: 50px;
+        height: 100%;
+        border-right: none;
+        border-collapse: collapse;
+      }
+      .lg .photo .pic {
+        height: 300px;
+        width: 300px;
+        box-shadow: 0 0 8px 8px #fff inset;
+        border-radius: 4px;
+        background-image: url('/assets/profile.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .lg .about {
+        width: 500px;
+        height: 100%;
+      }
+    </style>
+    <style type="text/css">
+      .md .label {
+        width: 35%;
+        font-size: 1.28em;
+      }
+      .md .value {
+        font-size: 1.28em;
+      }
+      .md .about {
+        height: 100%;
+      }
+      .md .about-me {
+        width: 100%;
+      }
+      .social {
+        height: 60px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        position: fixed;
+        margin-bottom: 0px;
+      }
+      .md .photo {
+        height: 400px;
+        width: 100%;
+        border-right: none;
+        border-collapse: collapse;
+      }
+      .md .photo .pic {
+        height: 400px;
+        width: 100%;
+        /* box-shadow: 0px 0px 8px 0 #fff inset; */
+        background-image: url('/assets/profile.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .md .heading {
+        text-align: center;
+      }
+
+      .md .details {
+        width: 100%;
+      }
+      .md .walmart::before {
+        background-size: 18px 18px;
+        height: 18px;
+        width: 18px;
+      }
+      .md .last-card {
+        padding-bottom: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lg">
+      <div class="about-me  flex-center">
+        <div class="photo flex-center">
+          <div class="pic"></div>
+        </div>
+        <div class="about flex-hc">
+          <div>
+            <div class="hello green-label status">Hello</div>
+            <div class="heading">
+              <div style="font-size:3.5em">
+                I'm <b style="font-weight: 600">Krishna Kumar</b>
+              </div>
+              <div class="h2">
+                Software Developer, Specialised in Web & DevOps. <br />
+                <span class="walmart">WalmartLabs</span>
+              </div>
+            </div>
+            <div><hr /></div>
+            <div class="details">
+              <div class="d-row">
+                <div class="label">AGE</div>
+                <div class="value">34</div>
+              </div>
+              <div class="d-row">
+                <div class="label">ADRESS</div>
+                <div class="value">Marathahalli, Bangalore</div>
+              </div>
+              <div class="d-row">
+                <div class="label">EXPERIENCE</div>
+                <div class="value">
+                  12.5 years (2006-2019)<br />
+                  <i
+                    >Infosys - 2006-09 (3.3), <br />
+                    Freelance - 2009 - 2012 (2.5 yrs)<br />
+                    One.com - 2012-2016 (3.8) <br />
+                    Saltside Technologies - 2016-2017 (1.8) <br />
+                    @WalmartLabs = 2017 ~ (1.5) <br />
+                  </i>
+                </div>
+              </div>
+              <div class="d-row">
+                <div class="label">EMAIL</div>
+                <div class="value">Krishnakumar.s.s@outlook.com</div>
+              </div>
+              <div class="d-row">
+                <div class="label">GITHUB</div>
+                <div class="value">
+                  <a href="https://github.com/krishna2nd" target="_blank">
+                    https://github.com/krishna2nd
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-row">
+                <div class="label">STATUS</div>
+                <div class="value">
+                  <span class="status green-label round-corner">
+                    Actively looking for change
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social green-label flex-center">
+        <div class="flex-center content">
+          <a href="https://facebook.com/krishna2nd" target="_blank">
+            <i class="fab fa-facebook-f" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://github.com/krishna2nd" target="_blank">
+            <i class="fab fa-github" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://twitter.com/Krishna2nd" target="_blank">
+            <i class="fab fa-twitter" style="font-size: 18px;"></i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=918447883963"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp" style="font-size: 18px;"></i>
+          </a>
+          <a href="skype:krishnakumar.s.s?call" target="_blank">
+            <i class="fab fa-skype" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/krishna2nd" target="_blank">
+            <i class="fab fa-linkedin-in" style="font-size: 18px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="md about-me  flex-c">
+      <div class="about flex-c">
+        <div class="photo flex-center card-light">
+          <div class="pic"></div>
+        </div>
+        <div class="heading card">
+          <div style="font-size:2.5em">
+            <b style="font-weight: 600">Krishna Kumar</b>
+          </div>
+          <div class="h2">
+            Developer, Specialised in Web & DevOps.
+          </div>
+          <div class="h2">
+            <span class="walmart">WalmartLabs</span>
+          </div>
+        </div>
+        <div class="flex-c">
+          <div class="details card-light">
+            <div class="d-row">
+              <div class="label">AGE</div>
+              <div class="value">34</div>
+            </div>
+            <div class="d-row">
+              <div class="label">ADRESS</div>
+              <div class="value">Marathahalli, Bangalore</div>
+            </div>
+          </div>
+          <div class="flex-c section">
+            <div class="label">EXPERIENCE</div>
+            <br />
+            <div class="value">
+              12.5 years (2006-2019)<br />
+              <i
+                >Infosys - 2006-09 (3.3), <br />
+                Freelance - 2009 - 2012 (2.5 yrs)<br />
+                One.com - 2012-2016 (3.8) <br />
+                Saltside Technologies - 2016-2017 (1.8) <br />
+                @WalmartLabs = 2017 ~ (1.5) <br />
+              </i>
+            </div>
+          </div>
+          <div class="details card last-card">
+            <div class="d-row">
+              <div class="label">EMAIL</div>
+              <div class="value">Krishnakumar.s.s@outlook.com</div>
+            </div>
+            <div class="d-row">
+              <div class="label">GITHUB</div>
+              <div class="value">
+                <a href="https://github.com/krishna2nd" target="_blank">
+                  https://github.com/krishna2nd</a
+                >
+              </div>
+            </div>
+
+            <div class="d-row">
+              <div class="label">STATUS</div>
+              <div class="value">
+                <span class="status green-label round-corner"
+                  >Actively looking for change</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-nbpm social green-label flex-center ">
+        <div class="flex-center content">
+          <a href="https://facebook.com/krishna2nd" target="_blank">
+            <i class="fab fa-facebook-f" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://github.com/krishna2nd" target="_blank">
+            <i class="fab fa-github" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://twitter.com/Krishna2nd" target="_blank">
+            <i class="fab fa-twitter" style="font-size: 18px;"></i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=918447883963"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp" style="font-size: 18px;"></i>
+          </a>
+          <a href="skype:krishnakumar.s.s?call" target="_blank">
+            <i class="fab fa-skype" style="font-size: 18px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/krishna2nd" target="_blank">
+            <i class="fab fa-linkedin-in" style="font-size: 18px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </body>
 </html>
