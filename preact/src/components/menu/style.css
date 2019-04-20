@@ -1,0 +1,43 @@
+.burger {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+  color: white;
+  background: linear-gradient(45deg, #07cb79 10%, #05bcc9);
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
+  border-radius: 0% 0% 0% 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+
+.burger i.fixed {
+    position: fixed;
+    top:18px;
+    right: 18px;
+}
+
+.open {
+  padding: 16px 16px 200vw 200vw;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 25vh 0;
+  justify-content: space-around;
+  top: 100;
+
+}
+
+.links a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  display: block;
+}

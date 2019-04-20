@@ -9,17 +9,17 @@ const Info = () => (
 	<div class={classNames(style.social, style.greenLabel)}>
 		<Grid fluid>
 			<Row start className={css.card}>
-				<Col xs={12} md={3} lg={2} className={css.label}>
+				<Col xs={3} md={3} lg={2} className={css.label}>
 					AGE
 				</Col>
-				<Col xs={12} md={9} lg={10} className={css.value}>
+				<Col xs={9} md={9} lg={10} className={css.value}>
 					34
 				</Col>
 
-				<Col xs={12} md={3} lg={2} className={css.label}>
+				<Col xs={3} md={3} lg={2} className={css.label}>
 					ADDRESS
 				</Col>
-				<Col xs={12} md={9} lg={10} className={css.value}>
+				<Col xs={9} md={9} lg={10} className={css.value}>
 					Marathahalli, Bangalore
 				</Col>
 			</Row>

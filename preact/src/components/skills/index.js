@@ -14,64 +14,64 @@ const Skills = () => (
 				</Col>
 				<Col xs={12} md={9} lg={10} className={css.value}>
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>SERVER</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
+						<Col xs={9} md={9} lg={10} className={css.small}>
 							C, Golang, NodeJS, Java
 						</Col>
 					</Row>
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>CLIENT</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
+						<Col xs={9} md={9} lg={10} className={css.small}>
 							React, Javascript(ES5-9), TypeScript, PWA, Webpack, Workbox, Babel
 						</Col>
 					</Row>
 
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>DEPLOYMENT</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
-							LXC, Docker, Kubernates
+						<Col xs={9} md={9} lg={10} className={css.small}>
+							LXC, Docker
 						</Col>
 					</Row>
 
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>LOAD BALANCER</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
+						<Col xs={9} md={9} lg={10} className={css.small}>
 							HAProxy, KeepAliveD
 						</Col>
 					</Row>
 
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>PROTOCOLS</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
-							XMPP, HTTP, XMPP, SSH, IMAP, CALDAV
+						<Col xs={9} md={9} lg={10} className={css.small}>
+							EAS, XMPP, HTTP, XMPP, SSH, IMAP, CALDAV
 						</Col>
 					</Row>
 
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>DATABASE</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
+						<Col xs={9} md={9} lg={10} className={css.small}>
 							CouchDB, MongoDB, Neo4j, DynamoDB, Sqlite, IndexDB, PostgreSQL,
 							MySQL
 						</Col>
 					</Row>
 
 					<Row>
-						<Col xs md={4} lg={2}>
+						<Col xs={3} md={4} lg={2}>
 							<span class={css.label}>OS</span>
 						</Col>
-						<Col xs md={9} lg={10} className={css.small}>
+						<Col xs={9} md={9} lg={10} className={css.small}>
 							Debian Linux
 						</Col>
 					</Row>

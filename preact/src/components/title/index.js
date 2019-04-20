@@ -11,7 +11,7 @@ const Title = () => (
 				<Grid fluid>
 					<Row end className={css.right}>
 						<Col class={css.h1}>
-							I'm <b class={css.light}>Krishna Kumar</b>
+							I'm <span class={css.light}>Krishna Kumar</span>
 						</Col>
 					</Row>
 					<Row>

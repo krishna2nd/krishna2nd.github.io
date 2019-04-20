@@ -8,7 +8,7 @@
 .h1 {
   font-size: 1.6em;
 }
-.h1.light {
+.h1 .light {
   font-weight: 600;
 }
 
@@ -26,11 +26,13 @@ hr {
 .label {
   font-weight: 400;
   text-align: left;
+
 }
 
 .label::first-letter {
   font-size: 130%;
 }
+
 .value {
   font-weight: 300;
   text-align: left;
@@ -51,7 +53,7 @@ hr {
 .card,
 .card-light,
 .section {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .section .label {
@@ -69,13 +71,37 @@ hr {
   width: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+.right {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 576px) {
   .card,
   .card-light,
   .card-nbpm,
   .section {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
   }
+  :global(.container-fluid) {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .right {
+    justify-content: center;
+  }
+  hr {
+    display: none;
+  }
+  .xsNoPad {
+    padding: 0px !important;
+  }
+  .value {
+    padding-left: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+
 }
 
 a {
@@ -85,8 +111,4 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-
-.right {
-    justify-content: flex-end;
 }
