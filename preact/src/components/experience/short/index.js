@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import classNames from 'classnames';
 import style from './style';
-import css from '../styles/common';
+import css from '../../styles/common';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 

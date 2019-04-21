@@ -1,13 +1,14 @@
 import { h } from 'preact';
 import classNames from 'classnames';
 import style from './style';
+import css from '../styles/common';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default Dummy = () => (
-	<div class={classNames(style.social, style.greenLabel)}>
+	<div >
 		<Grid fluid>
 			<Row center>
-				<Col xs md={6} lg={4} className={style.content}>
+				<Col xs md lg >
 				</Col>
 			</Row>
 		</Grid>

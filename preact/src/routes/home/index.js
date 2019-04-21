@@ -6,7 +6,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Title from './../../components/title';
 import Status from './../../components/status';
 import Info from './../../components/info';
-import Experience from './../../components/experience';
+import Experience from '../../components/experience/short';
 import Skills from '../../components/skills';
 import Contact from '../../components/contact';
 import Education from '../../components/education';
