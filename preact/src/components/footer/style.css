@@ -1,0 +1,73 @@
+.social,
+.social .content {
+  height: 70px;
+  width: 100%;
+}
+.social .icons {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.social a {
+  color: #fff;
+}
+.social a:hover {
+  color: #fff;
+  text-decoration: none;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f0, 0 0 40px #0f0,
+      0 0 50px #fcf2f7, 0 0 60px #0f0, 0 0 70px #0f0;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #adff2f, 0 0 40px #adff2f,
+      0 0 50px #adff2f, 0 0 60px #adff2f, 0 0 70px #adff2f, 0 0 80px #adff2f;
+  }
+}
+
+.social {
+  bottom: 0;
+  position: sticky;
+}
+.social .content {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social .content i {
+  padding: 0 10px;
+}
+.social .icons {
+  font-size: 20px;
+}
+.greenLabel {
+  background-color: #07cb79;
+  color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .social {
+    height: 80px;
+    width: 100%;
+  }
+  .social .icons {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+  .social {
+    height: 70px;
+    width: 100%;
+  }
+  .social .icons {
+    font-size: 36px;
+  }
+}

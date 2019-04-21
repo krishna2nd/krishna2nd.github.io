@@ -1,0 +1,29 @@
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+.profilePic {
+  height: 400px;
+  box-shadow: 0 0 8px 8px #fff inset;
+  border-radius: 4px;
+  background-image: url(/assets/profile.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 576px) {
+  .home {
+    padding-top: 0;
+  }
+  .profilePic {
+    padding: 0;
+    max-width: 100%;
+    height: 300px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

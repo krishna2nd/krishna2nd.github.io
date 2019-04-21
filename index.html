@@ -1,323 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="/icons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="/icons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="/icons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/icons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/icons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/icons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/icons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/icons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/icons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/icons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#07cb79" />
-    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
-    <title>Krishna Kumar</title>
-    <style type="text/css">
-    @media only screen and (max-width:700px){div.lg{display:none;height:0;opacity:0;visibility:hidden}}@media only screen and (min-width:701px) and (max-width:800px){.lg{padding-top:60px;padding-bottom:120px}.lg .photo{padding:10px!important}.lg .social{height:70px}.lg .social i.fab{font-size:36px}div.md{display:none;height:0;opacity:0;visibility:hidden}}@media only screen and (min-width:701px){div.md{display:none;height:0;opacity:0;visibility:hidden}}body,html{width:100%;height:100%;margin:0;padding:0;font-family:'Source Sans Pro',sans-serif;-webkit-font-smoothing:antialiased;font-size:1em;color:#565656; box-sizing: border-box; }a{text-decoration:none;color:gray;cursor:pointer}a:hover{text-decoration:underline}.social a{color:#fff}.social a:hover{color:#fff;text-decoration:none;-webkit-animation:glow 1s ease-in-out infinite alternate;-moz-animation:glow 1s ease-in-out infinite alternate;animation:glow 1s ease-in-out infinite alternate}@-webkit-keyframes glow{from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #0f0,0 0 40px #0f0,0 0 50px #fcf2f7,0 0 60px #0f0,0 0 70px #0f0}to{text-shadow:0 0 20px #fff,0 0 30px #adff2f,0 0 40px #adff2f,0 0 50px #adff2f,0 0 60px #adff2f,0 0 70px #adff2f,0 0 80px #adff2f}}.h2{font-size:1.2em;color:#ababab;margin-bottom:2px}hr{height:1px;border:none;background-color:#ababab}.d-row{display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;padding:8px}.hello{display:inline-block;border-radius:2px}.label{font-weight:400;text-align:left}.value{font-weight:300;text-align:left}.value .label { font-size: 0.8em; }.md .section .value .label { margin-left: -15px; font-size: 0.75em; }.status{padding:2px 8px}.label::first-letter{font-size:130%}.flex-center{display:flex;flex-direction:row;justify-content:center;align-items:center}.flex-hc{justify-content:center}.flex-c,.flex-hc{display:flex;flex-direction:column}.about{border-collapse:collapse;text-align:left}.social{height:60px;bottom:0;position:sticky}.social .content{display:inline-block;justify-content:space-evenly}.social .content i{padding:0 10px}.social i.fab{font-size:20px}.green-label{background-color:#07cb79;color:#fff}.round-corner{border-radius:4px}.card,.section{padding:20px 0}.card,.card-light,.section{margin-bottom:15px}.card,.card-light,.card-nbpm,.section{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}.section .label{padding-left:8px}.section .value{padding-left:20px}.walmart::before{display:inline-block;content:' ';background-image:url(/assets/walmart-labs.jpg);background-size:20px 20px;height:20px;width:20px}.lg .label{width:100px}.lg .value{font-weight:300;font-size:1em}.lg .hello{display:inline-block;border-radius:2px}.lg .about-me{height:100vh;width:100%}.lg .photo{padding:50px;height:100%;border-right:none;border-collapse:collapse}.lg .photo .pic{height:300px;width:300px;box-shadow:0 0 8px 8px #fff inset;border-radius:4px;background-image:url(/assets/profile.jpeg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.lg .about{width:500px;height:100%}.lg .h1{font-size:1.6em}.lg .h1.light{font-weight:600}.md .label{width:35%;font-size:1.1em}.md .value{font-size:1.1em}.md .about{height:100%}.md .about-me{width:100%}.social{height:60px;width:100%;bottom:0;left:0;z-index:1000;position:fixed;margin-bottom:0}.md .photo{height:400px;width:100%;border-right:none;border-collapse:collapse}.md .photo .pic{height:400px;width:100%;background-image:url(/assets/profile.jpeg);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.md .heading{text-align:center}.md .details{width:100%}.md .walmart::before{background-size:18px 18px;height:18px;width:18px}.md .last-card{padding-bottom:80px}.md .social{height:80px}.md .social i.fab{font-size:40px} 
-    </style>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://use.fontawesome.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#07cb79"><meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png"><title>Krishna Kumar</title><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><style>body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        color: #565656;
+      }</style><script>window.scrollIt = function(
+        destination,
+        duration = 200,
+        easing = 'linear',
+        callback
+      ) {
+        const easings = {
+          linear(t) {
+            return t;
+          },
+          easeInQuad(t) {
+            return t * t;
+          },
+          easeOutQuad(t) {
+            return t * (2 - t);
+          },
+          easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          },
+          easeInCubic(t) {
+            return t * t * t;
+          },
+          easeOutCubic(t) {
+            return --t * t * t + 1;
+          },
+          easeInOutCubic(t) {
+            return t < 0.5
+              ? 4 * t * t * t
+              : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+          },
+          easeInQuart(t) {
+            return t * t * t * t;
+          },
+          easeOutQuart(t) {
+            return 1 - --t * t * t * t;
+          },
+          easeInOutQuart(t) {
+            return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t;
+          },
+          easeInQuint(t) {
+            return t * t * t * t * t;
+          },
+          easeOutQuint(t) {
+            return 1 + --t * t * t * t * t;
+          },
+          easeInOutQuint(t) {
+            return t < 0.5
+              ? 16 * t * t * t * t * t
+              : 1 + 16 * --t * t * t * t * t;
+          }
+        };
 
-  </head>
-  <body>
-    <div class="lg">
-      <div class="about-me  flex-center">
-        <div class="photo flex-center">
-          <div class="pic"></div>
-        </div>
-        <div class="about flex-hc">
-          <div>
-            <div class="hello green-label status">Hello</div>
-            <div class="heading">
-              <div class="h1">I'm <b class="light">Krishna Kumar</b></div>
-              <div class="h2">
-                Developer, Specialised in Web & DevOps. <br />
-                <span class="walmart">WalmartLabs</span>
-              </div>
-            </div>
-            <div><hr /></div>
-            <div class="details">
-              <div class="d-row">
-                <div class="label">AGE</div>
-                <div class="value">34</div>
-              </div>
-              <div class="d-row">
-                <div class="label">ADDRESS</div>
-                <div class="value">Marathahalli, Bangalore</div>
-              </div>
-              <div class="d-row">
-                <div class="label">EXPERIENCE</div>
-                <div class="value">
-                  12.5 years (2006-2019)<br />
-                  <i>
-                    Infosys - 2006-09 (3.3), <br />
-                    Freelance - 2009 - 2012 (2.5 yrs)<br />
-                    One.com - 2012-2016 (3.8) <br />
-                    Saltside Technologies - 2016-2017 (1.8) <br />
-                    @WalmartLabs - 2017 ~ (1.5) <br />
-                  </i>
-                </div>
-              </div>
-              <div class="d-row">
-                <div class="label">SKILLS</div>
-                <div class="value">
-                  <span class="label">SERVER</span><br/> C, Golang, NodeJS, Java <br/>
-                  <span class="label">CLIENT</span><br/> React, Javascript(ES5-9), TypeScript, <br/>PWA, Webpack, Workbox, Babel <br/>
-                  <span class="label">DEPLOYMENT</span><br/> LXC, Docker, Kubernates <br/>
-                  <span class="label">LOAD BALANCER</span><br/> HAProxy, KeepAliveD <br/>
-                  <span class="label">PROTOCOLS</span><br/> XMPP, HTTP, XMPP <br/>
-                  <span class="label">DATABASE</span><br/> CouchDB, MongoDB, Neo4j, DynamoDB, <br/>Sqlite, IndexDB, PostgreSQL, MySQL<br/>
-                  <span class="label">OS</span><br/> Debian Linux <br/>
-                  </i>
-                </div>
-              </div>
-              <div class="d-row">
-                <div class="label">EMAIL</div>
-                <div class="value">Krishnakumar.s.s@outlook.com</div>
-              </div>
-              <div class="d-row">
-                <div class="label">GITHUB</div>
-                <div class="value">
-                  <a href="https://github.com/krishna2nd" target="_blank">
-                    https://github.com/krishna2nd
-                  </a>
-                </div>
-              </div>
+        // Store initial position of a window and time
+        // If performance is not available in your browser
+        // It will fallback to new Date().getTime() - thanks IE < 10
+        const start = window.pageYOffset;
+        const startTime =
+          'now' in window.performance
+            ? performance.now()
+            : new Date().getTime();
+        // const startTime = typeof(window.performance['now']) == 'function' ? performance.now() : new Date().getTime();
 
-              <div class="d-row">
-                <div class="label">STATUS</div>
-                <div class="value">
-                  <span class="status green-label round-corner">
-                    Actively looking for change
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="social green-label flex-center">
-        <div class="flex-center content">
-          <a href="https://facebook.com/krishna2nd" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://github.com/krishna2nd" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/Krishna2nd" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=918447883963"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="skype:krishnakumar.s.s?call" target="_blank">
-            <i class="fab fa-skype"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/krishna2nd" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+        // Take height of window and document to sesolve max scrollable value
+        // Prevent requestAnimationFrame() from scrolling below maximum scollable value
+        // Resolve destination type (node or number)
+        const documentHeight = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.clientHeight,
+          document.documentElement.scrollHeight,
+          document.documentElement.offsetHeight
+        );
+        const windowHeight =
+          window.innerHeight ||
+          document.documentElement.clientHeight ||
+          document.getElementsByTagName('body')[0].clientHeight;
+        const destinationOffset =
+          typeof destination === 'number' ? destination : destination.offsetTop;
+        const destinationOffsetToScroll = Math.round(
+          documentHeight - destinationOffset < windowHeight
+            ? documentHeight - windowHeight
+            : destinationOffset
+        );
 
-    <div class="md about-me  flex-c">
-      <div class="about flex-c">
-        <div class="photo flex-center card-light">
-          <div class="pic"></div>
-        </div>
-        <div class="heading card">
-          <div style="font-size:2.5em">
-            <b style="font-weight: 600">Krishna Kumar</b>
-          </div>
-          <div class="h2">
-            Developer, Specialised in Web & DevOps.
-          </div>
-          <div class="h2">
-            <span class="walmart">WalmartLabs</span>
-          </div>
-        </div>
-        <div class="flex-c">
-          <div class="details card-light">
-            <div class="d-row">
-              <div class="label">AGE</div>
-              <div class="value">34</div>
-            </div>
-            <div class="d-row">
-              <div class="label">ADDRESS</div>
-              <div class="value">Marathahalli, Bangalore</div>
-            </div>
-          </div>
-          <div class="flex-c section">
-            <div class="label">EXPERIENCE</div>
-            <br />
-            <div class="value">
-              12.5 years (2006-2019)<br />
-              <i>
-                Infosys - 2006-09 (3.3), <br />
-                Freelance - 2009 - 2012 (2.5 yrs)<br />
-                One.com - 2012-2016 (3.8) <br />
-                Saltside Technologies - 2016-2017 (1.8) <br />
-                @WalmartLabs - 2017 ~ (1.5) <br />
-              </i>
-            </div>
-          </div>
-          <div class="flex-c section">
-            <div class="label">SKILLS</div>
-            <div class="value">
-              <span class="label">SERVER</span><br/> C, Golang, NodeJS, Java <br/>
-              <span class="label">CLIENT</span><br/> React, Javascript (ES5-9), PWA, Webpack, Workbox, TypeScript, Babel <br/>
-              <span class="label">DEPLOYMENT</span><br/> LXC, Docker, Kubernates <br/>
-              <span class="label">LOAD BALANCER</span><br/> HAProxy, KeepAliveD <br/>
-              <span class="label">PROTOCOLS</span><br/> XMPP, HTTP, XMPP <br/>
-              <span class="label">DATABASE</span><br/> CouchDB, MongoDB, Neo4j, Sqlite, DynamoDB, IndexDB, PostgreSQL, MySQL<br/>
-              <span class="label">OS</span><br/> Debian Linux <br/>
-              </i>
-            </div>
-          </div>
-          <div class="details card last-card">
-            <div class="d-row">
-              <div class="label">EMAIL</div>
-              <div class="value">Krishnakumar.s.s@outlook.com</div>
-            </div>
-            <div class="d-row">
-              <div class="label">GITHUB</div>
-              <div class="value">
-                <a href="https://github.com/krishna2nd" target="_blank">
-                  https://github.com/krishna2nd</a
-                >
-              </div>
-            </div>
+        // If requestAnimationFrame is not supported
+        // Move window to destination position and trigger callback function
+        if ('requestAnimationFrame' in window === false) {
+          window.scroll(0, destinationOffsetToScroll);
+          if (callback) {
+            callback();
+          }
+          return;
+        }
 
-            <div class="d-row">
-              <div class="label">STATUS</div>
-              <div class="value">
-                <span class="status green-label round-corner"
-                  >Actively looking for change</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-nbpm social green-label flex-center ">
-        <div class="flex-center content">
-          <a href="https://facebook.com/krishna2nd" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://github.com/krishna2nd" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/Krishna2nd" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=918447883963"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="skype:krishnakumar.s.s?call" target="_blank">
-            <i class="fab fa-skype"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/krishna2nd" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+        // function resolves position of a window and moves to exact amount of pixels
+        // Resolved by calculating delta and timing function choosen by user
+        function scroll() {
+          const now =
+            'now' in window.performance
+              ? performance.now()
+              : new Date().getTime();
+          const time = Math.min(1, (now - startTime) / duration);
+          const timeFunction = easings[easing](time);
+          window.scroll(
+            0,
+            Math.ceil(
+              timeFunction * (destinationOffsetToScroll - start) + start
+            )
+          );
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138601741-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+          // Stop requesting animation when window reached its destination
+          // And run a callback function
+          if (window.pageYOffset === destinationOffsetToScroll) {
+            if (callback) {
+              callback();
+            }
+            return;
+          }
 
-    gtag('config', 'UA-138601741-1');
-  </script>
+          // If window still needs to scroll to reach destination
+          // Request another scroll invokation
+          requestAnimationFrame(scroll);
+        }
 
-    <script type="text/javascript">
-      if ('serviceWorker' in navigator) {
+        // Invoke scroll and sequential requestAnimationFrame
+        scroll();
+      };</script><link rel="shortcut icon" href="/favicon.ico"><link href="/style.dae90.css" rel="stylesheet"></head><body><div id="app"><header><div><span id="burger" class="burger__3vJpv"><i class="fas fa-bars"></i></span></div></header><div class="home__MseGd"><div class="container-fluid"><div class="row"><div class="col-md-4 col-lg-3 xsNoPad__3kKVN"><div class="profilePic__1Ei2F"></div></div><div class="col-md-8 col-lg-8"><div><div class="card__1Uf_h container"><div class="right__2dJh6 row end-true"><div class="container-fluid"><div class="right__2dJh6 row end-true"><div class="h1__uUvgl">I'm <span class="light__18qDE">Krishna Kumar</span></div></div><div class="row"><div class="h2__3UfOg">Developer, Web &amp; DevOps</div></div><div class="right__2dJh6 row"><div><span class="walmart__3LGkw">WalmartLabs</span></div></div></div></div><div class="row start-true"><div class="col-xs col-md col-lg"><hr></div></div></div></div><div><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-12 col-md-3 col-lg-2 label__25EQh">EDUCATION</div><div class="col-xs-12 col-md-9 col-lg-10 value__279ev"><b>M.C.A</b> (Master of computer application) •<i> Kerala University, 2009-2012 (80.6%)</i><br><b>B.Sc.</b> Physics •<i> Kerala University, September 2005 (90.8%)</i></div></div></div></div><div><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-12 col-md-3 col-lg-2 label__25EQh">EXPERIENCE</div><div class="col-xs-12 col-md-9 col-lg-10 value__279ev">12.5 years (2006-2019)<br><i>Infosys - 2006-09 (3.3),<br>Freelance - 2009 - 2012 (2.5)<br>One.com - 2012-2016 (3.8)<br>Saltside Technologies - 2016-2017 (1.8)<br>@WalmartLabs - 2017 ~ (1.5)<br></i></div></div></div></div><div class><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-12 col-md-3 col-lg-2 label__25EQh">SKILLS</div><div class="col-xs-12 col-md-9 col-lg-10 value__279ev"><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">SERVER</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">C, Golang, NodeJS, Java</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">CLIENT</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">React, Javascript(ES5-9), TypeScript, PWA, Webpack, Workbox, Babel</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">DEPLOYMENT</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">LXC, Docker</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">LOAD BALANCER</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">HAProxy, KeepAliveD</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">PROTOCOLS</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">EAS, XMPP, HTTP, XMPP, SSH, IMAP, CALDAV</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">DATABASE</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">CouchDB, MongoDB, Neo4j, DynamoDB, Sqlite, IndexDB, PostgreSQL, MySQL</div></div><div class="row"><div class="col-xs-3 col-md-4 col-lg-2"><span class="label__25EQh">OS</span></div><div class="col-xs-9 col-md-9 col-lg-10 small__10A8t">Debian Linux</div></div></div></div></div></div><div><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-12 col-md-3 col-lg-2 label__25EQh">KNOWLEDGE IN</div><div class="col-xs-12 col-md-9 col-lg-10 value__279ev">Ext.js, Mocha, Chef, Thrift, Java<br>Selenium, Sauce Labs<br>Jenkin, Kubernetes AWS, Azure, GCD<br>Postfix, Dovecot, Varnish cache, Redis<br>Nginx, Apache2, AWS(EC2, Lambda, S3)<br></div></div></div></div><div><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-12 col-md-3 col-lg-2 label__25EQh">ACHIEVEMENTS</div><div class="col-xs-12 col-md-9 col-lg-10 value__279ev">Received an honourable performance award from Infosys &amp; One.com.<br>Rated as CRR1 performance employee by Infosys in all the three years.<br>Achieved 3d Rank in M.C.A in Kerala University, Best Project &amp; Outgoing student.<br>Received Award for Scoring highest mark in SSLC (Secondary school )<br></div></div></div></div><div class><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-3 col-md-3 col-lg-2 label__25EQh">AGE</div><div class="col-xs-9 col-md-9 col-lg-10 value__279ev">34</div><div class="col-xs-3 col-md-3 col-lg-2 label__25EQh">ADDRESS</div><div class="col-xs-9 col-md-9 col-lg-10 value__279ev">Marathahalli, Bangalore</div></div></div></div><div class><div class="container-fluid"><div class="card__1Uf_h row start-true"><div class="col-xs-3 col-md-3 col-lg-2 label__25EQh">EMAIL</div><div class="col-xs-9 col-md-9 col-lg-10 value__279ev"><a href="mailto:Krishnakumar.s.s@outlook.com?Subject=Hello%20Krishna" target="_top">Krishnakumar.s.s@outlook.com</a></div><div class="col-xs-3 col-md-3 col-lg-2 label__25EQh">GITHUB</div><div class="col-xs-9 col-md-9 col-lg-10 value__279ev"><a href="https://github.com/krishna2nd" target="_blank">https://github.com/krishna2nd</a></div><div class="col-xs-3 col-md-3 col-lg-2 label__25EQh">STATUS</div><div class="col-xs-9 col-md-9 col-lg-10 value__279ev"><div class="hello__2k1EV green__1z3iT status__2-nGC">Actively looking for change</div></div></div></div></div></div></div></div></div><div class="social__39td9 greenLabel__1gRlz"><div class="container-fluid"><div class="row center-true"><div class="col-xs col-md-6 col-lg-4 content__3mMOT"><a href="https://facebook.com/krishna2nd" target="_blank"><i class="fab fa-facebook-f icons__3KqsJ"></i></a><a href="https://github.com/krishna2nd" target="_blank"><i class="fab fa-github icons__3KqsJ"></i></a><a href="https://twitter.com/Krishna2nd" target="_blank"><i class="fab fa-twitter icons__3KqsJ"></i></a><a href="https://api.whatsapp.com/send?phone=918447883963" target="_blank"><i class="fab fa-whatsapp icons__3KqsJ"></i></a><a href="skype:krishnakumar.s.s?call" target="_blank"><i class="fab fa-skype icons__3KqsJ"></i></a><a href="https://www.linkedin.com/in/krishna2nd" target="_blank"><i class="fab fa-linkedin-in icons__3KqsJ"></i></a></div></div></div></div></div><script defer="defer" src="/bundle.ec0e2.js"></script><script>window.fetch ||
+        document.write(
+          '<script src="/polyfills.572ca.js"><\/script>'
+        );</script><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-138601741-1"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138601741-1');</script><script>if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js');
         });
-      }
-    </script>
-    
-  </body>
-</html>
+      }</script></body></html>
