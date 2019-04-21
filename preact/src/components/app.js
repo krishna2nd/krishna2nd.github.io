@@ -35,6 +35,7 @@ export default class App extends Component {
 }
 
 function CalcDevice() {
+	if (typeof window === "undefined") return;
 	const media = window.matchMedia;
 	if (!media) {
 		window.isMobile = true;
@@ -61,4 +62,4 @@ function CalcDevice() {
 	}
 }
 CalcDevice();
-window.onresize = CalcDevice;
+if (typeof window !== "undefined") window.onresize = CalcDevice;

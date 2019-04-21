@@ -29,14 +29,14 @@ export default class Header extends Component {
 						>
 							EXPERIENCE
 						</Link>
-						<Link
+						{/* <Link
 							activeClassName={style.active}
 							href="/portfolio"
 							className={css.label}
 							onClick={this.onClick}
 						>
 							PORTFOLIO
-						</Link>
+						</Link> */}
 					</nav>
 				</Menu>
 			</header>
