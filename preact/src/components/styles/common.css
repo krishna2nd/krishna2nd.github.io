@@ -112,3 +112,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.fgwhite {
+  color:white
+}

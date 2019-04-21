@@ -2,7 +2,7 @@ const Technologies = {
 	REACT: {
 		title: 'ReactJS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	NODE: {
 		title: 'Node.JS',
@@ -17,182 +17,202 @@ const Technologies = {
 	JENKINS: {
 		title: 'Jenkins',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	GOLANG: {
 		title: 'Golang',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	DOCKER: {
 		title: 'Docker',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	PWA: {
 		title: 'PWA',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	WORKBOX: {
 		title: 'WorkBox',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	MOCHA: {
 		title: 'Mocha',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	NGINX: {
 		title: 'Nginx',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	EAS: {
 		title: 'Microsoft Exchange ActiveSync',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	CALDAV: {
 		title: 'Caldav',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	COUCHDB: {
 		title: 'CouchDB',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	PGSQL: {
 		title: 'PostgreSQL',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	IMAP: {
 		title: 'IMAP',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	FREEBSD: {
 		title: 'FreeBSD',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	ZFS: {
 		title: 'ZFS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	XFS: {
 		title: 'XFS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	NFS: {
 		title: 'NFS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	PHP: {
 		title: 'PHP',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	PYTHON: {
 		title: 'Python',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	BASH: {
 		title: 'Bash',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	FTP: {
 		title: 'Pure-ftp',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	RSYNC: {
 		title: 'Rsync',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	VARNISH: {
 		title: 'Varnish',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	ASPNET: {
 		title: 'Asp.Net',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	JQUERY: {
 		title: 'jQuery',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	GOOGLE_MAP: {
 		title: 'Google Map',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	CSHARP: {
 		title: 'C#',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	SSRS: {
 		title: 'SSRS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	JAVASCRIPT: {
 		title: 'Javascript',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	WTTOM: {
 		title: 'WTTOM',
 		icon: '',
-		descrition: 'Windows Testing Technologies'
+		description: 'Windows Testing Technologies'
 	},
 	NAGIOS: {
 		title: 'NAGIOS',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	THRUK: {
 		title: 'THRUK',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	PERL: {
 		title: 'Perl',
 		icon: '',
-		descrition: ''
+		description: ''
 	},
 	DEVCOT: {
 		title: 'Devcot IMAP',
 		icon: '',
-		descrition: 'Devcot IMAP Server'
+		description: 'Devcot IMAP Server'
 	},
 	APACHE: {
 		title: 'Apache 2',
 		icon: '',
-		descrition: 'Web Server'
+		description: 'Web Server'
 	},
 	WSCRIPTING: {
 		title: 'Windows Scripting',
 		icon: '',
-		descrition: 'Windows Scripting, Jscript, VB Script'
+		description: 'Windows Scripting, Jscript, VB Script'
 	},
 	DOS: {
 		title: 'DOS',
 		icon: '',
-		descrition: 'DOS shell'
+		description: 'DOS shell'
+	},
+	C: {
+		title: 'C',
+		icon: '',
+		description: ''
+	},
+	XMPP: {
+		title: 'XMPP',
+		icon: '',
+		description: ''
+	},
+	SQLITE: {
+		title: 'Sqlite',
+		icon: '',
+		description: ''
+	},
+	MSSQL: {
+		title: 'MSSQL',
+		icon: '',
+		description: 'Microsoft SQL Server'
 	}
 };
 

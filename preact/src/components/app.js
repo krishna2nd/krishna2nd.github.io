@@ -10,7 +10,7 @@ import Experience from '../routes/experience';
 import PortFolio from '../routes/portfolio';
 
 export default class App extends Component {
-	
+
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
 	 *	@param {string} event.url	The newly routed URL
@@ -28,9 +28,37 @@ export default class App extends Component {
 					<Experience path="/experience" />
 					<PortFolio path="/portfolio" />
 				</Router>
-				<Footer></Footer>
+				<Footer />
 			</div>
-			
 		);
 	}
 }
+
+function CalcDevice() {
+	const media = window.matchMedia;
+	if (!media) {
+		window.isMobile = true;
+		return;
+	}
+
+	let mql = media('(max-width: 768px)');
+	mql.removeListener(CalcDevice);
+	mql.addListener(CalcDevice);
+	window.isMobile = mql.matches;
+
+	mql = media('(min-width: 768px) and (max-width: 1024px)');
+	mql.removeListener(CalcDevice);
+	mql.addListener(CalcDevice);
+	window.isTab = mql.matches;
+
+	mql = media('(min-width: 1200px)');
+	mql.removeListener(CalcDevice);
+	mql.addListener(CalcDevice);
+	window.isDesktop = mql.matches;
+
+	if (!media || !(window.isMobile || window.isTab || window.isDesktop)) {
+		window.isMobile = true;
+	}
+}
+CalcDevice();
+window.onresize = CalcDevice;

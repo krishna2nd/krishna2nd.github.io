@@ -4,9 +4,9 @@ import style from './style';
 import css from '../../../styles/common';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-const Section = ({ title, children, footer }) => (
-	<div>
-		<Grid >
+const Section = ({id, title, children, footer, className }) => (
+	<div id={id}>
+		<Grid  className={className}>
 			<Row ><Col className={css.label}>
 			{title}
 			</Col>
@@ -16,7 +16,7 @@ const Section = ({ title, children, footer }) => (
 					{children}
 				</Col>
 			</Row>
-			{footer && (
+			{footer && typeof footer === 'object' ? footer : (
 				<Row>
 					<Col>{footer}</Col>
 				</Row>
