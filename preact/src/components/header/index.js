@@ -29,6 +29,14 @@ export default class Header extends Component {
 						>
 							EXPERIENCE
 						</Link>
+						<Link
+							activeClassName={style.active}
+							href="/technologies"
+							className={css.label}
+							onClick={this.onClick}
+						>
+							TECHNOLOGIES
+						</Link>
 						{/* <Link
 							activeClassName={style.active}
 							href="/portfolio"

@@ -241,7 +241,7 @@ const OneCom =   {
                 Technologies.THRUK,
                 Technologies.PERL,
                 Technologies.APACHE,
-                Technologies.DEVCOT,
+                Technologies.DOVECOT,
                 Technologies.VARNISH
             ],
             duration: {
