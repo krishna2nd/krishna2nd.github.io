@@ -2335,9 +2335,10 @@ var details_ExperienceDetails = function (_Component) {
 			return function (e) {
 				var target = document.getElementById(id);
 				try {
-					scrollIt(target, 600, 'easeOutQuad');
+					window.scrollIt(target, 600, 'easeOutQuad');
 				} catch (e) {
 					target.scrollIntoView(true);
+					console.log(e);
 				}
 				_this2.setState({
 					active: id

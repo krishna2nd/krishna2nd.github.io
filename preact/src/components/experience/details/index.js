@@ -24,10 +24,11 @@ class ExperienceDetails extends Component {
 		const scrollToView = id => e => {
 			const target = document.getElementById(id);
 			try {
-				scrollIt(target, 600, 'easeOutQuad');
+				window.scrollIt(target, 600, 'easeOutQuad');
 			}
 			catch (e) {
 				target.scrollIntoView(true);
+				console.log(e);
 			}
 			this.setState({
 				active: id

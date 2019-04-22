@@ -4,7 +4,7 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js'
 );
 
-var VERSION = '0.0.2';
+var VERSION = '0.0.3';
 var SPA_NAV_PATTERN = '/index.html';
 var SPA_NAV_OPTIONS = {
   blacklist: [
@@ -37,7 +37,10 @@ function initialize() {
   workbox.core.clientsClaim();
   workbox.precaching.precacheAndRoute(
     [
-      '/about.css',
+      '/style.dae90.css',
+      '/bundle.d4156.js',
+      '/route-experience.chunk.10347.js',
+      '/route-home.chunk.88b4e.js',
       { url: '/index.html', revision: VERSION },
       { url: '/', revision: VERSION }
     ],
