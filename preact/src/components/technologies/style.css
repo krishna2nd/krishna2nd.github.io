@@ -1,0 +1,33 @@
+.techBox {
+    height: 120px;
+    margin: 4px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:  40%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.techBox:hover {
+    filter: contrast(4)
+}
+
+.techBox span {
+    line-height: 30px;
+    color: white;
+    background-color: gray;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: .7;
+    border-radius: 4px;
+}
+.dark {
+    font-weight: bold;
+    font-size: 25px;
+}

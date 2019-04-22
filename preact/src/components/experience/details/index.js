@@ -65,6 +65,7 @@ class ExperienceDetails extends Component {
 										<img className={style.image} src={exp.company.image} />
 									}
 									className={style.expCard}
+									style={!isMobile ? { marginLeft: '-8px'}: null}
 								>
 									{exp.projects.map(project => {
 										const Tech = project.technologies

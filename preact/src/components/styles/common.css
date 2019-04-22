@@ -18,8 +18,9 @@
   margin-bottom: 2px;
 }
 hr {
-  height: 1px;
-  border: none;
+  border-bottom: solid 1px #808080;
+  background-color: #ababab;
+  border-top: none;
   background-color: #ababab;
 }
 

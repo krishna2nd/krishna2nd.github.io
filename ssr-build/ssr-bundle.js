@@ -900,6 +900,16 @@ var header_Header = function (_Component) {
 							onClick: this.onClick
 						},
 						'EXPERIENCE'
+					),
+					Object(preact_min["h"])(
+						match["Link"],
+						{
+							activeClassName: header_style_default.a.active,
+							href: '/technologies',
+							className: common_default.a.label,
+							onClick: this.onClick
+						},
+						'TECHNOLOGIES'
 					)
 				)
 			)
@@ -1718,221 +1728,325 @@ var Company = {
 
 
 // CONCATENATED MODULE: ./data/types/technologies.js
-var Technologies = {
+var technologies_TechnologyType = {
+	ProgrammingLanguage: 'Programming Languages',
+	FrameWork: 'Frameworks',
+	Deployment: 'Deployment Technologies',
+	Cloud: 'Cloud Technologies',
+	Protocol: 'Protocols',
+	DataBase: 'Databases',
+	Software: 'Softwares',
+	FileSystem: 'File Systems',
+	OS: 'Operating Systems'
+};
+
+var technologies_Technologies = {
 	REACT: {
-		title: 'ReactJS',
-		icon: '',
-		description: ''
+		title: 'Reactjs',
+		icon: '/assets/technologies/react.svg',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	NODE: {
-		title: 'Node.JS',
-		icon: '',
-		decription: ''
+		title: 'Node.js',
+		icon: '/assets/technologies/node.js.png',
+		decription: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	ONEOPS: {
 		title: 'OneOps',
-		icon: '',
-		decription: ''
+		icon: '/assets/technologies/oneops.svg',
+		decription: '',
+		type: technologies_TechnologyType.Cloud
+	},
+	AWS: {
+		title: 'AWS',
+		icon: '/assets/technologies/aws.png',
+		decription: '',
+		type: technologies_TechnologyType.Cloud
 	},
 	JENKINS: {
 		title: 'Jenkins',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/jenkins.svg',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	GOLANG: {
 		title: 'Golang',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/golang.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	DOCKER: {
 		title: 'Docker',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/docker.png',
+		description: '',
+		type: technologies_TechnologyType.Deployment
 	},
 	PWA: {
 		title: 'PWA',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/pwa.png',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	WORKBOX: {
 		title: 'WorkBox',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/workbox.svg',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	MOCHA: {
 		title: 'Mocha',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/mocha.jpg',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	NGINX: {
 		title: 'Nginx',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/nginx.svg',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	EAS: {
 		title: 'Microsoft Exchange ActiveSync',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/eas.png',
+		description: '',
+		type: technologies_TechnologyType.Protocol
 	},
 	CALDAV: {
 		title: 'Caldav',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/caldav.png',
+		description: '',
+		type: technologies_TechnologyType.Protocol
 	},
 	COUCHDB: {
 		title: 'CouchDB',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/couchdb.png',
+		description: '',
+		type: technologies_TechnologyType.DataBase
 	},
 	PGSQL: {
 		title: 'PostgreSQL',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/postgresql.png',
+		description: '',
+		type: technologies_TechnologyType.DataBase
 	},
 	IMAP: {
 		title: 'IMAP',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/thunderbird.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	FREEBSD: {
 		title: 'FreeBSD',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/freebsd.png',
+		description: '',
+		type: technologies_TechnologyType.OS
 	},
 	ZFS: {
 		title: 'ZFS',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/zfs.png',
+		description: '',
+		type: technologies_TechnologyType.FileSystem
+
 	},
 	XFS: {
 		title: 'XFS',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/xfs.jpg',
+		description: '',
+		type: technologies_TechnologyType.FileSystem
 	},
 	NFS: {
 		title: 'NFS',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/nfs.png',
+		description: '',
+		type: technologies_TechnologyType.FileSystem
 	},
 	PHP: {
 		title: 'PHP',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/php.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	PYTHON: {
 		title: 'Python',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/python.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	BASH: {
 		title: 'Bash',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/bash-l.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	FTP: {
 		title: 'Pure-ftp',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/pure-ftpd.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	RSYNC: {
 		title: 'Rsync',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/rsync.png',
+		description: '',
+		type: technologies_TechnologyType.Protocol
 	},
 	VARNISH: {
 		title: 'Varnish',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/varnish.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	ASPNET: {
 		title: 'Asp.Net',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/asp.net.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	JQUERY: {
 		title: 'jQuery',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/jquery.svg',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	GOOGLE_MAP: {
 		title: 'Google Map',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/googlemap.png',
+		description: '',
+		type: technologies_TechnologyType.FrameWork
 	},
 	CSHARP: {
 		title: 'C#',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/csharp.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	SSRS: {
 		title: 'SSRS',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/ssrs.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	JAVASCRIPT: {
 		title: 'Javascript',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/js.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	WTTOM: {
 		title: 'WTTOM',
-		icon: '',
-		description: 'Windows Testing Technologies'
+		icon: '/assets/technologies/wttom.jpg',
+		description: 'Windows Testing Technologies',
+		type: technologies_TechnologyType.Software
 	},
 	NAGIOS: {
 		title: 'NAGIOS',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/nagios.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	THRUK: {
 		title: 'THRUK',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/thruk.png',
+		description: '',
+		type: technologies_TechnologyType.Software
 	},
 	PERL: {
 		title: 'Perl',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/perl.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
-	DEVCOT: {
-		title: 'Devcot IMAP',
-		icon: '',
-		description: 'Devcot IMAP Server'
+	DOVECOT: {
+		title: 'Dovcot IMAP',
+		icon: '/assets/technologies/dovecot.svg',
+		description: 'Devcot IMAP Server',
+		type: technologies_TechnologyType.Software
 	},
 	APACHE: {
 		title: 'Apache 2',
-		icon: '',
-		description: 'Web Server'
+		icon: '/assets/technologies/apache.jpg',
+		description: 'Web Server',
+		type: technologies_TechnologyType.Software
 	},
 	WSCRIPTING: {
 		title: 'Windows Scripting',
-		icon: '',
-		description: 'Windows Scripting, Jscript, VB Script'
+		icon: '/assets/technologies/wscripting.png',
+		description: 'Windows Scripting, Jscript, VB Script',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	DOS: {
 		title: 'DOS',
-		icon: '',
-		description: 'DOS shell'
+		icon: '/assets/technologies/msdos.png',
+		description: 'DOS shell',
+		type: technologies_TechnologyType.Software
 	},
 	C: {
 		title: 'C',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/c.png',
+		description: '',
+		type: technologies_TechnologyType.ProgrammingLanguage
 	},
 	XMPP: {
 		title: 'XMPP',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/xmpp.svg',
+		description: '',
+		type: technologies_TechnologyType.Protocol
 	},
 	SQLITE: {
 		title: 'Sqlite',
-		icon: '',
-		description: ''
+		icon: '/assets/technologies/sqlite.png',
+		description: '',
+		type: technologies_TechnologyType.DataBase
 	},
 	MSSQL: {
 		title: 'MSSQL',
-		icon: '',
-		description: 'Microsoft SQL Server'
+		icon: '/assets/technologies/mssql.png',
+		description: 'Microsoft SQL Server',
+		type: technologies_TechnologyType.DataBase
+	},
+	MYSQL: {
+		title: 'MYSQL',
+		icon: '/assets/technologies/mysql.svg',
+		description: 'My SQL Server',
+		type: technologies_TechnologyType.DataBase
+	},
+	MARIADB: {
+		title: 'MARIADB',
+		icon: '/assets/technologies/mariadb.png',
+		description: 'Maria DB Server',
+		type: technologies_TechnologyType.DataBase
+	},
+	MONGODB: {
+		title: 'MONGODB',
+		icon: '/assets/technologies/mongodb.png',
+		description: 'MongoDB',
+		type: technologies_TechnologyType.DataBase
+	},
+	DYNAMODB: {
+		title: 'Dynamo DB',
+		icon: '/assets/technologies/dynamodb.png',
+		description: 'Dynamo DB',
+		type: technologies_TechnologyType.DataBase
+	},
+	NEO4J: {
+		title: 'Neo4j',
+		icon: '/assets/technologies/neo4j.png',
+		description: 'Neo4j',
+		type: technologies_TechnologyType.DataBase
+	},
+	LXC: {
+		title: 'LXC',
+		icon: '/assets/technologies/lxc.png',
+		description: 'LXC',
+		type: technologies_TechnologyType.Deployment
+	},
+	KUBERNETES: {
+		title: 'Kubernetes',
+		icon: '/assets/technologies/kubernetes.svg',
+		description: 'kubernetes',
+		type: technologies_TechnologyType.Deployment
 	}
 };
 
@@ -1969,7 +2083,7 @@ var Infosys = {
         role: ProjectRole.DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Web based application for E&R department created in ASP.net, Google map API\u2019s.                 It is a project for managing employee\u2019s certifications, examinations, error reports,                 various reports required for management to evaluate invoice etc.'],
-        technologies: [Technologies.ASPNET, Technologies.MSSQL, Technologies.JQUERY, Technologies.GOOGLE_MAP, Technologies.CSHARP, Technologies.SSRS],
+        technologies: [technologies_Technologies.ASPNET, technologies_Technologies.MSSQL, technologies_Technologies.JQUERY, technologies_Technologies.GOOGLE_MAP, technologies_Technologies.CSHARP, technologies_Technologies.SSRS],
         duration: {
             from: new Date('2012-11-01'),
             to: new Date('2013-05-30')
@@ -1980,7 +2094,7 @@ var Infosys = {
         role: ProjectRole.DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Worked with a retail web application for KMART,                 I had assigned to fix the bugs on web client side communication/UI issues in www.mygofer.com'],
-        technologies: [Technologies.JQUERY],
+        technologies: [technologies_Technologies.JQUERY],
         duration: {
             from: new Date('2012-11-01'),
             to: new Date('2013-05-30')
@@ -1991,7 +2105,7 @@ var Infosys = {
         role: ProjectRole.DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['I had involved in development of website for coordinating testing activities of Windows operating system components.                 This Portal enables user to manage jobs for scheduling on machines with testing requirements,                 like install OS (w2k, xp, vista, LH, win7), install updates/Hotfix, run the defined test sets in operating system.                 The portal using WTTOM interface for communicating with machines in network.'],
-        technologies: [Technologies.ASPNET, Technologies.JAVASCRIPT, Technologies.CSHARP, Technologies.MSSQL, Technologies.WTTOM],
+        technologies: [technologies_Technologies.ASPNET, technologies_Technologies.JAVASCRIPT, technologies_Technologies.CSHARP, technologies_Technologies.MSSQL, technologies_Technologies.WTTOM],
         duration: {
             from: new Date('2012-11-01'),
             to: new Date('2013-05-30')
@@ -2002,7 +2116,7 @@ var Infosys = {
         role: ProjectRole.QE,
         type: ProjectType.TESTING,
         description: ['The windows sustained engineering group is involved in maintenance of windows operating systems.                 The project involves testing and test automation of various components for service packs,                 security patches & critical updates of Windows NT, W2K, XP, WSO3 and Vista Operating System, WSO8.                 Quality assurance for the fixes is very important before the operating system patches (Service packs)                 are released worldwide. The activities include system test planning, system testing, and                 liaison with core and sustained engineering teams for test execution on security system components.', 'I had involved in automation testing and manual test cases execution of various components for different service packs.                 I prepared Patch analysis report for a fix and decide what test traces need to be run to cover security holes.                 I was involved in triage and analysis of OS bugs and their follow-ups with developers.                 I developed automation\'s of test bed setup using VB scripts, C#, Mita.'],
-        technologies: [Technologies.WSCRIPTING, Technologies.WTTOM, Technologies.DOS],
+        technologies: [technologies_Technologies.WSCRIPTING, technologies_Technologies.WTTOM, technologies_Technologies.DOS],
         duration: {
             from: new Date('2012-11-01'),
             to: new Date('2013-05-30')
@@ -2038,7 +2152,7 @@ var OneCom = {
         role: ProjectRole.DEVELOPER,
         company: Company.SALTSIDE,
         description: ['Microsoft released new version of protocol specification for Exchange active sync. \n                I worked on upgrading current EAS implementation with new protocol specification'],
-        technologies: [Technologies.NODE, Technologies.MOCHA, Technologies.PGSQL, Technologies.NGINX, Technologies.EAS, Technologies.IMAP, Technologies.CALDAV, Technologies.COUCHDB],
+        technologies: [technologies_Technologies.NODE, technologies_Technologies.MOCHA, technologies_Technologies.PGSQL, technologies_Technologies.NGINX, technologies_Technologies.EAS, technologies_Technologies.IMAP, technologies_Technologies.CALDAV, technologies_Technologies.COUCHDB],
         duration: {
             from: new Date('2016-05-02'),
             to: new Date('2016-01-01')
@@ -2049,7 +2163,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Created tls rpc based backup restore system for customers who hosted their domains in one.com.\n                The system handles restore of email, MySQL, Address books, other web applications data.\n                Also Written a parallel self-learning job scheduler which execute restore job based on priority, \n                server load, availability of target server and customer state.'],
-        technologies: [Technologies.GOLANG, Technologies.FREEBSD, Technologies.ZFS, Technologies.RSYNC],
+        technologies: [technologies_Technologies.GOLANG, technologies_Technologies.FREEBSD, technologies_Technologies.ZFS, technologies_Technologies.RSYNC],
         duration: {
             from: new Date('2015-06-01'),
             to: new Date('2015-12-30')
@@ -2060,7 +2174,7 @@ var OneCom = {
         role: ProjectRole.DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Active member in team for developing & bug fixing in EAS (Microsoft Exchange Active sync) protocol \n                Implementation to sync one.com services like Mail, Calendar, Contacts with mobile devices. \n                Developed a EAS/Cal/Contact log analysis system which enhance developer to point out critical issues.'],
-        technologies: [Technologies.NODE, Technologies.PGSQL, Technologies.NGINX, Technologies.EAS, Technologies.IMAP, Technologies.CALDAV, Technologies.COUCHDB],
+        technologies: [technologies_Technologies.NODE, technologies_Technologies.PGSQL, technologies_Technologies.NGINX, technologies_Technologies.EAS, technologies_Technologies.IMAP, technologies_Technologies.CALDAV, technologies_Technologies.COUCHDB],
         duration: {
             from: new Date('2014-08-01'),
             to: new Date('2015-06-30')
@@ -2071,7 +2185,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Which use for bulk stat analysis of xfs file system to find the frequent disk user, customer storage usage details.'],
-        technologies: [Technologies.XFS, Technologies.C],
+        technologies: [technologies_Technologies.XFS, technologies_Technologies.C],
         duration: {
             from: new Date('2014-06-01'),
             to: new Date('2014-06-30')
@@ -2082,7 +2196,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['One.com provide internet services like Web hosting, Mail Servers, Cloud Drive and other web \tapplications, hence it is necessary to calculate customer web space size in near real time \tmanner. Achieving near real time we have created and implemented Fsmon and disk usage for NFS/XFS/Maildir.'],
-        technologies: [Technologies.PHP, Technologies.XFS, Technologies.C, Technologies.NFS, Technologies.XMPP, Technologies.PYTHON, Technologies.BASH],
+        technologies: [technologies_Technologies.PHP, technologies_Technologies.XFS, technologies_Technologies.C, technologies_Technologies.NFS, technologies_Technologies.XMPP, technologies_Technologies.PYTHON, technologies_Technologies.BASH],
         duration: {
             from: new Date('2014-07-01'),
             to: new Date('2014-07-30')
@@ -2093,7 +2207,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Customized pure-ftp open source ftp server with company specification and implemented new module for varnish cache communication'],
-        technologies: [Technologies.C, Technologies.NFS, Technologies.BASH, Technologies.VARNISH],
+        technologies: [technologies_Technologies.C, technologies_Technologies.NFS, technologies_Technologies.BASH, technologies_Technologies.VARNISH],
         duration: {
             from: new Date('2014-04-01'),
             to: new Date('2014-05-30')
@@ -2104,7 +2218,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['One.com has several departments to communicate for live customer issues through messenger. \n                Jabber tracker provides and efficient mechanism to raise ticket against respective Department and get solution immediately. \n                It provides features like Issue creation, assign, reopen, close, search, report, Group list announcements, \n                bulk mail/ request handling, shift handling etc.'],
-        technologies: [Technologies.PHP, Technologies.XFS, Technologies.C, Technologies.NFS, Technologies.XMPP, Technologies.PYTHON, Technologies.BASH],
+        technologies: [technologies_Technologies.PHP, technologies_Technologies.XFS, technologies_Technologies.C, technologies_Technologies.NFS, technologies_Technologies.XMPP, technologies_Technologies.PYTHON, technologies_Technologies.BASH],
         duration: {
             from: new Date('2013-12-01'),
             to: new Date('2014-03-30')
@@ -2115,7 +2229,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Created a centralized cron mail processing and reporting system which receives cron mails generated \n                from servers are then processed and stored in SQLite database (Week basis).Using this stored data \n                for report on sever needed update, server health, process failure details etc.'],
-        technologies: [Technologies.PHP, Technologies.SQLITE, Technologies.JQUERY],
+        technologies: [technologies_Technologies.PHP, technologies_Technologies.SQLITE, technologies_Technologies.JQUERY],
         duration: {
             from: new Date('2013-06-01'),
             to: new Date('2013-11-30')
@@ -2126,7 +2240,7 @@ var OneCom = {
         role: ProjectRole.LEAD_DEVELOPER,
         type: ProjectType.DEVELOPMENT,
         description: ['Created a backup restore system for customers who hosted their domains in one.com. \n                The system handles the restore of email account, web content restore, MySQL restore, \n                Address books, other web applications, and Cloud drive data.'],
-        technologies: [Technologies.PHP, Technologies.PGSQL, Technologies.JQUERY, Technologies.NFS],
+        technologies: [technologies_Technologies.PHP, technologies_Technologies.PGSQL, technologies_Technologies.JQUERY, technologies_Technologies.NFS],
         duration: {
             from: new Date('2012-11-01'),
             to: new Date('2013-05-30')
@@ -2137,7 +2251,7 @@ var OneCom = {
         role: ProjectRole.DEVOPS_ENGINEER,
         type: ProjectType.DEVOPS,
         description: ['One.com is an Internet service provider involves Domain registration, Web hosting, Mail Accounts, Cloud drive and other web applications. One.com have 5000+ Servers including Web, Database, Mail storage, SMTP, Cloud, Application servers, Varnish cache, Data Storage, Load balancer, DNS, Central Admin Database, Customer Database, CRM Jboss etc. One.Com is purely working in open source technologies.', 'Server Administration needs knowledge in all areas of respective server management and issue resolution if required. Any issue in servers have to be resolved quickly as possible before customer get impacted. Daily basis administration task involves resolving customers issue, DDOS/Botnet attack detection and block, prevent mail spamming, and Database spamming. Create mail/MySQL servers/LXC servers and move customers for load balance etc. '],
-        technologies: [Technologies.PGSQL, Technologies.NAGIOS, Technologies.THRUK, Technologies.PERL, Technologies.APACHE, Technologies.DEVCOT, Technologies.VARNISH],
+        technologies: [technologies_Technologies.PGSQL, technologies_Technologies.NAGIOS, technologies_Technologies.THRUK, technologies_Technologies.PERL, technologies_Technologies.APACHE, technologies_Technologies.DOVECOT, technologies_Technologies.VARNISH],
         duration: {
             from: new Date('2012-10-20'),
             to: new Date('2013-12-31')
@@ -2168,7 +2282,7 @@ var WalmartLabs = {
         type: ProjectType.DEVELOPMENT,
         role: ProjectRole.LEAD_DEVELOPER,
         description: ['Worked on migrating Mexico ecommerce customer faced applications and dependent services from \n            Rackspace cloud to OneOps. Feature development for sams.com.mx web application. \n            Working on creating an orchestrator service for clients by integrating various backend service.'],
-        technologies: [Technologies.REACT, Technologies.NODE, Technologies.ONEOPS, Technologies.JENKINS],
+        technologies: [technologies_Technologies.REACT, technologies_Technologies.NODE, technologies_Technologies.ONEOPS, technologies_Technologies.JENKINS],
         duration: {
             from: new Date('2017-12-20'),
             to: Date()
@@ -2199,7 +2313,7 @@ var SaltSide = {
         type: ProjectType.DEVELOPMENT,
         role: ProjectRole.LEAD_DEVELOPER,
         description: ['Worked on Adding feature or update existing features in Web & API application deployed for 4 countries. \n            Highly scalable architecture, implementation with AWS EC2 instances. \n            Workstation, development environments are with Vagrant, Docker, EC2. \n            Also Worked in integration with various analytics tools, Facebook conversion pixels, Worked on migration to PWA Web'],
-        technologies: [Technologies.REACT, Technologies.NODE, Technologies.DOCKER, Technologies.PWA],
+        technologies: [technologies_Technologies.REACT, technologies_Technologies.NODE, technologies_Technologies.DOCKER, technologies_Technologies.PWA],
         duration: {
             from: new Date('2016-05-02'),
             to: new Date('2017-12-20')
@@ -2380,7 +2494,8 @@ var details_ExperienceDetails = function (_Component) {
 								{
 									id: exp.company.title,
 									title: Object(preact_min["h"])('img', { className: details_style_default.a.image, src: exp.company.image }),
-									className: details_style_default.a.expCard
+									className: details_style_default.a.expCard,
+									style: !isMobile ? { marginLeft: '-8px' } : null
 								},
 								exp.projects.map(function (project) {
 									var Tech = project.technologies.map(function (tech) {
@@ -2571,6 +2686,114 @@ var portfolio_PortFolio = function (_Component) {
 }(preact_min["Component"]);
 
 
+// EXTERNAL MODULE: ./routes/technologies/style.css
+var technologies_style = __webpack_require__("j2VS");
+var technologies_style_default = /*#__PURE__*/__webpack_require__.n(technologies_style);
+
+// EXTERNAL MODULE: ./components/technologies/style.css
+var components_technologies_style = __webpack_require__("NfG/");
+var components_technologies_style_default = /*#__PURE__*/__webpack_require__.n(components_technologies_style);
+
+// CONCATENATED MODULE: ./components/technologies/index.js
+
+
+
+
+
+
+
+
+
+var technologies__ref2 = Object(preact_min["h"])('br', null);
+
+var technologies_TechnologiesList = function TechnologiesList(_ref) {
+	var Technologies = _ref.Technologies,
+	    TechnologyType = _ref.TechnologyType;
+
+	var objTechnologies = Object.keys(Technologies);
+	return Object(preact_min["h"])(
+		'div',
+		null,
+		Object(preact_min["h"])(
+			lib["Grid"],
+			null,
+			Object(preact_min["h"])(
+				lib["Row"],
+				{ start: true, className: common_default.a.card },
+				Object(preact_min["h"])(
+					lib["Col"],
+					{ xs: 12, md: 12, lg: 12, className: classnames_default()(common_default.a.label, components_technologies_style_default.a.dark) },
+					'TECHNOLOGIES USED ',
+					technologies__ref2
+				),
+				objTechnologies.map(function (tech) {
+					var technology = Technologies[tech];
+					return Object(preact_min["h"])(
+						lib["Col"],
+						{
+							xs: 3,
+							md: 3,
+							lg: 2,
+							className: components_technologies_style_default.a.techBox,
+							style: {
+								backgroundImage: 'url(' + (technology.icon || '') + ')'
+							}
+						},
+						Object(preact_min["h"])(
+							'span',
+							null,
+							technology.title
+						)
+					);
+				})
+			)
+		)
+	);
+};
+
+/* harmony default export */ var technologies = (technologies_TechnologiesList);
+// CONCATENATED MODULE: ./routes/technologies/index.js
+
+
+function technologies__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function technologies__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function technologies__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+var technologies__ref = Object(preact_min["h"])(technologies, {
+	TechnologyType: technologies_TechnologyType,
+	Technologies: technologies_Technologies
+});
+
+var technologies_TechnolgiesUsed = function (_Component) {
+	technologies__inherits(TechnolgiesUsed, _Component);
+
+	function TechnolgiesUsed() {
+		technologies__classCallCheck(this, TechnolgiesUsed);
+
+		return technologies__possibleConstructorReturn(this, _Component.apply(this, arguments));
+	}
+
+	TechnolgiesUsed.prototype.render = function render() {
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': technologies_style_default.a.technolgies },
+			technologies__ref
+		);
+	};
+
+	return TechnolgiesUsed;
+}(preact_min["Component"]);
+
+
 // CONCATENATED MODULE: ./components/app.js
 
 
@@ -2591,6 +2814,7 @@ function app__inherits(subClass, superClass) { if (typeof superClass !== "functi
 
 
 
+
 var app__ref = Object(preact_min["h"])(header_Header, null);
 
 var app__ref2 = Object(preact_min["h"])(home, { path: '/' });
@@ -2599,7 +2823,9 @@ var app__ref3 = Object(preact_min["h"])(experience_Experience, { path: '/experie
 
 var app__ref4 = Object(preact_min["h"])(portfolio_PortFolio, { path: '/portfolio' });
 
-var app__ref5 = Object(preact_min["h"])(components_footer, null);
+var app__ref5 = Object(preact_min["h"])(technologies_TechnolgiesUsed, { path: '/technologies' });
+
+var _ref6 = Object(preact_min["h"])(components_footer, null);
 
 var app_App = function (_Component) {
 	app__inherits(App, _Component);
@@ -2634,9 +2860,10 @@ var app_App = function (_Component) {
 				{ onChange: this.handleRoute },
 				app__ref2,
 				app__ref3,
-				app__ref4
+				app__ref4,
+				app__ref5
 			),
-			app__ref5
+			_ref6
 		);
 	};
 
@@ -2647,7 +2874,7 @@ var app_App = function (_Component) {
 
 
 function CalcDevice() {
-	if (typeof window === "undefined") return;
+	if (typeof window === 'undefined') return;
 	var media = window.matchMedia;
 	if (!media) {
 		window.isMobile = true;
@@ -2674,7 +2901,107 @@ function CalcDevice() {
 	}
 }
 CalcDevice();
-if (typeof window !== "undefined") window.onresize = CalcDevice;
+
+if (typeof window !== 'undefined') {
+	window.onresize = CalcDevice;
+	window.scrollIt = function (destination) {
+		var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 200;
+		var easing = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'linear';
+		var callback = arguments[3];
+
+		var easings = {
+			linear: function linear(t) {
+				return t;
+			},
+			easeInQuad: function easeInQuad(t) {
+				return t * t;
+			},
+			easeOutQuad: function easeOutQuad(t) {
+				return t * (2 - t);
+			},
+			easeInOutQuad: function easeInOutQuad(t) {
+				return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+			},
+			easeInCubic: function easeInCubic(t) {
+				return t * t * t;
+			},
+			easeOutCubic: function easeOutCubic(t) {
+				return --t * t * t + 1;
+			},
+			easeInOutCubic: function easeInOutCubic(t) {
+				return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+			},
+			easeInQuart: function easeInQuart(t) {
+				return t * t * t * t;
+			},
+			easeOutQuart: function easeOutQuart(t) {
+				return 1 - --t * t * t * t;
+			},
+			easeInOutQuart: function easeInOutQuart(t) {
+				return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t;
+			},
+			easeInQuint: function easeInQuint(t) {
+				return t * t * t * t * t;
+			},
+			easeOutQuint: function easeOutQuint(t) {
+				return 1 + --t * t * t * t * t;
+			},
+			easeInOutQuint: function easeInOutQuint(t) {
+				return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t;
+			}
+		};
+
+		// Store initial position of a window and time
+		// If performance is not available in your browser
+		// It will fallback to new Date().getTime() - thanks IE < 10
+		var start = window.pageYOffset;
+		var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+		// const startTime = typeof(window.performance['now']) == 'function' ? performance.now() : new Date().getTime();
+
+		// Take height of window and document to sesolve max scrollable value
+		// Prevent requestAnimationFrame() from scrolling below maximum scollable value
+		// Resolve destination type (node or number)
+		var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+		var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+		var destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+		// If requestAnimationFrame is not supported
+		// Move window to destination position and trigger callback function
+		if ('requestAnimationFrame' in window === false) {
+			window.scroll(0, destinationOffsetToScroll);
+			if (callback) {
+				callback();
+			}
+			return;
+		}
+
+		// function resolves position of a window and moves to exact amount of pixels
+		// Resolved by calculating delta and timing function choosen by user
+		function scroll() {
+			var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+			var time = Math.min(1, (now - startTime) / duration);
+			var timeFunction = easings[easing](time);
+			window.scroll(0, Math.ceil(timeFunction * (destinationOffsetToScroll - start) + start));
+
+			// Stop requesting animation when window reached its destination
+			// And run a callback function
+			if (window.pageYOffset === destinationOffsetToScroll) {
+				if (callback) {
+					callback();
+				}
+				return;
+			}
+
+			// If window still needs to scroll to reach destination
+			// Request another scroll invokation
+			requestAnimationFrame(scroll);
+		}
+
+		// Invoke scroll and sequential requestAnimationFrame
+		scroll();
+	};
+}
 // CONCATENATED MODULE: ./index.js
 
 
@@ -2898,6 +3225,14 @@ if (typeof window !== "undefined") window.onresize = CalcDevice;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "NfG/":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"techBox":"techBox__2NHSL","dark":"dark__2uGJo"};
 
 /***/ }),
 
@@ -3893,6 +4228,13 @@ var index = {
 /***/ }),
 
 /***/ "htqM":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "j2VS":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
