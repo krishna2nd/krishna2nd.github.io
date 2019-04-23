@@ -26,7 +26,7 @@ export default class Menu extends Component {
 					className={classNames(style.burger, isOpen && style.open)}
 				>
 					{!isOpen ? (
-						<i className="fas fa-bars" onClick={this.Toggle} />
+						<i className={classNames('fas fa-bars', style.menu)} onClick={this.Toggle} />
 					) : (
 						<i
 							className={classNames('fas', 'fa-times', isOpen && style.fixed)}

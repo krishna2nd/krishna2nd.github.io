@@ -50,3 +50,6 @@
 .links a:hover {
   color:yellow;
 }
+.menu {
+  cursor: pointer;
+}

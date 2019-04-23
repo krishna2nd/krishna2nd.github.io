@@ -11,9 +11,16 @@ const TechnologiesList = ({ Technologies, TechnologyType }) => {
 	return (
 		<div>
 			<Grid>
-				<Row start className={css.card}>
-					<Col xs={12} md={12} lg={12} className={classNames(css.label, style.dark)}>
-						TECHNOLOGIES USED <br/>
+				<Row center="xs">
+					<Col
+						xsOffset={2}
+						xs={10}
+						md={10}
+						lg={10}
+						className={classNames(css.label, style.dark)}
+					>
+						<br />
+						TECHNOLOGY USED
 					</Col>
 					{objTechnologies.map(tech => {
 						const technology = Technologies[tech];
@@ -24,7 +31,7 @@ const TechnologiesList = ({ Technologies, TechnologyType }) => {
 								lg={2}
 								className={style.techBox}
 								style={{
-									backgroundImage: `url(${technology.icon||''})`
+									backgroundImage: `url(${technology.icon || ''})`
 								}}
 							>
 								<span>{technology.title}</span>

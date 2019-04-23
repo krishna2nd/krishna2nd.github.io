@@ -35,7 +35,7 @@ export default class Header extends Component {
 							className={css.label}
 							onClick={this.onClick}
 						>
-							TECHNOLOGIES
+							TECHNOLOGY
 						</Link>
 						{/* <Link
 							activeClassName={style.active}

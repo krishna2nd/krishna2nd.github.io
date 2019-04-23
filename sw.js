@@ -1,16 +1,16 @@
 /* global importScripts, workbox */
 
 importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js'
+  "https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js"
 );
 
-var VERSION = '0.0.4';
-var SPA_NAV_PATTERN = '/index.html';
+var VERSION = "0.0.5";
+var SPA_NAV_PATTERN = "/index.html";
 var SPA_NAV_OPTIONS = {
   blacklist: [
     new RegExp(
-      '/*.*[.](xml|json|txt|js|ttf|eot|svg|woff|gif|ico|jpeg|jpg|png|webp)$',
-      'i'
+      "/*.*[.](xml|json|txt|js|ttf|eot|svg|woff|gif|ico|jpeg|jpg|png|webp)$",
+      "i"
     )
   ]
 };
@@ -28,24 +28,25 @@ var PLUGINS = [ONE_YEAR_EXP, CACHEABLE];
 
 function initialize() {
   workbox.core.setCacheNameDetails({
-    prefix: 'kk-web-app',
+    prefix: "kk-web-app",
     suffix: VERSION,
-    precache: 'kk'
+    precache: "kk"
   });
   workbox.googleAnalytics.initialize();
   workbox.core.skipWaiting();
   workbox.core.clientsClaim();
   workbox.precaching.precacheAndRoute(
     [
-      '/bundle.8e1fe.js',
-      '/route-home.chunk.88b4e.js',
-      '/style.956b1.css',
-      '/route-experience.chunk.4f2b1.js',
-      '/route-portfolio.chunk.7cf66.js',
-      '/route-technologies.chunk.299d3.js',
+      "/style.180a8.css",
+      "/bundle.23887.js",
+      "/route-home.chunk.1e31a.js",
 
-      { url: '/index.html', revision: VERSION },
-      { url: '/', revision: VERSION }
+      "/route-experience.chunk.8eced.js",
+      "/route-portfolio.chunk.f77ed.js",
+      "/route-technologies.chunk.d0dd3.js",
+
+      { url: "/index.html", revision: VERSION },
+      { url: "/", revision: VERSION }
     ],
     {
       directoryIndex: null,
@@ -62,41 +63,41 @@ function registerRoutes() {
   workbox.routing.registerRoute(
     /^\/$/,
     new workbox.strategies.StaleWhileRevalidate({
-      cacheName: 'static-cache',
+      cacheName: "static-cache",
       plugins: PLUGINS
     })
   );
   workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$/,
     new workbox.strategies.StaleWhileRevalidate({
-      cacheName: 'images-cache',
+      cacheName: "images-cache",
       plugins: PLUGINS
     })
   );
   workbox.routing.registerRoute(
     /\.(?:js|css)$/,
     new workbox.strategies.StaleWhileRevalidate({
-      cacheName: 'code-cache',
+      cacheName: "code-cache",
       plugins: PLUGINS
     })
   );
   workbox.routing.registerRoute(
     /^https:\/\/fonts\.googleapis\.com/,
     new workbox.strategies.StaleWhileRevalidate({
-      cacheName: 'google-fonts'
+      cacheName: "google-fonts"
     })
   );
   workbox.routing.registerRoute(
     /^https:\/\/use\.fontawesome\.com/,
     new workbox.strategies.StaleWhileRevalidate({
-      cacheName: 'fab-fonts'
+      cacheName: "fab-fonts"
     })
   );
 
   workbox.routing.registerRoute(
     /^https:\/\/fonts\.gstatic\.com/,
     new workbox.strategies.CacheFirst({
-      cacheName: 'google-fonts-webfonts',
+      cacheName: "google-fonts-webfonts",
       plugins: PLUGINS
     })
   );
