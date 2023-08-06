@@ -4,7 +4,7 @@ import { ShortDesignation } from 'components/cards/short-designation';
 import { FluentProvider, webLightTheme } from '@fluentui/react-components';
 
 import 'styles/generic.css';
-import { ExperienceTable } from 'components/table/experience/experience-table';
+import { ExperienceTable } from 'components/experience/table/experience-table';
 
 export const ProfileView = () => {
   return (
