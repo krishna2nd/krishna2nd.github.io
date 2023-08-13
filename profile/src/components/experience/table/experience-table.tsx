@@ -30,7 +30,7 @@ import {
   OneComLogo,
   SaltSideLogo,
   WalmartLabsLogo,
-} from 'components/company/images';
+} from 'components/images';
 
 type CompanyProfileCell = {
   label: string;

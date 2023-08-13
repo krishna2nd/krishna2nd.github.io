@@ -1,0 +1,13 @@
+.outerBox {
+    padding: 8px;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    width: 136px;
+    height: 136px;
+    box-sizing: border-box;
+}
+
+.outerBox:hover {
+    background-color: #EFEFFE;
+    border: 1px solid #EFEFFE;
+}

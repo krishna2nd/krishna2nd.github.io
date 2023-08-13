@@ -1,9 +1,14 @@
 import * as React from 'react';
 import { Image } from '@fluentui/react-components';
+// @ts-ignore
 import microsoft from 'assets/company/logo/microsoft.22.png';
+// @ts-ignore
 import walmart from 'assets/company/logo/walmart.22.png';
+// @ts-ignore
 import saltSide from 'assets/company/logo/saltside.22.png';
+// @ts-ignore
 import OneCom from 'assets/company/logo/one.com.22.png';
+// @ts-ignore
 import Infosys from 'assets/company/logo/infosys.22.png';
 
 export const MicrosoftLogo = () => <Image alt='Microsoft' src={microsoft} />;
