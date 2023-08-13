@@ -5,9 +5,8 @@
     width: 136px;
     height: 136px;
     box-sizing: border-box;
-}
-
-.outerBox:hover {
-    background-color: #EFEFFE;
-    border: 1px solid #EFEFFE;
+    &:hover {
+        background-color: #EFEFFE;
+        border: 1px solid #EFEFFE;
+    }
 }
